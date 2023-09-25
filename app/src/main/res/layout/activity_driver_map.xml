@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Driver.DriverMapActivity"
+    android:layout_height="match_parent"
+    android:background="@color/splash_status_bar"
+    android:layout_width="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/driver_logout_btn"
+        >
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/driver_settings_btn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+        android:text="Setting" />
+
+    <Button
+        android:id="@+id/driver_logout_btn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/btn"
+        android:text="Logout" />
+
+</RelativeLayout>
